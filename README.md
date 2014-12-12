@@ -16,8 +16,9 @@ var pull = require('array-pull');
 pull(['a', 'b', 'c'], 'c');
 //=> ['a', 'b']
 
-pull(['a', 'b', 'c'], 'b', 'c');
-//=> ['a']
+var arr = ['a', 'b', 'c'];
+pull(arr, 'b', 'c');
+// arr => ['a']
 
 pull(['a', 'b', 'c'], 'a', 'b', 'c');
 //=> []
