@@ -15,17 +15,17 @@ module.exports = function arrayPull(arr, ele) {
   }
 
   var pull = slice(arguments, 1);
-  var len = arr.length;
+  var len = pull.length;
   var i = 0;
-  var res = [];
 
   while(len--) {
-    ele = arr[i++];
+    ele = pull[i++];
+    var idx = arr.indexOf(ele);
 
-    if (pull.indexOf(ele) === -1) {
-      res.push(ele);
+    if (idx !== -1) {
+      arr.splice(idx, 1);
     }
   }
 
-  return res;
+  return arr;
 };
