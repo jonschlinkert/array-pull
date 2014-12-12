@@ -20,4 +20,10 @@ describe('pull', function () {
     pull(['a', 'b', 'c'], 'b', 'c').should.eql(['a']);
     pull(['a', 'b', 'c'], 'a', 'b', 'c').should.eql([]);
   });
+
+  it('should remove elements from the array in place:', function () {
+    var arr = ['a', 'b', 'c'];
+    pull(arr, 'c').should.eql(['a', 'b']);
+    arr.should.eql(['a', 'b']);
+  });
 });
