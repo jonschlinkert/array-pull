@@ -1,0 +1,44 @@
+{
+  "name": "array-pull",
+  "description": "Remove the specified elements from the given array using strict equality for comparison.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jonschlinkert/array-pull",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/array-pull.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/array-pull/issues"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/jonschlinkert/array-pull/blob/master/LICENSE-MIT"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "array-slice": "^0.2.2"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "keywords": [
+    "array",
+    "element",
+    "elements",
+    "item",
+    "list",
+    "pull",
+    "remove"
+  ]
+}
