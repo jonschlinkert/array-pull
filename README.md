@@ -24,8 +24,15 @@ pull(['a', 'b', 'c'], 'a', 'b', 'c');
 //=> []
 ```
 
+## Related
+ * [array-unique](https://github.com/jonschlinkert/array-unique): Return an array free of duplicate values. Fastest ES5 implementation.
+ * [array-intersection](https://github.com/jonschlinkert/array-intersection): Return an array with the unique values present in _all_ given arrays using strict equality for comparisons.
+ * [array-each](https://github.com/jonschlinkert/array-each): Loop over each item in an array and call the given function on every element.
+ * [array-every](https://github.com/jonschlinkert/array-every): Returns true if the callback returns truthy for all elements in the given array.
+ * [array-map](https://github.com/substack/array-map): `[].map(f)` for older browsers
+
 ## Running tests
-Install dev dependencies.
+Install dev dependencies:
 
 ```bash
 npm i -d && npm test
@@ -37,12 +44,12 @@ Pull requests and stars are always welcome. For bugs and feature requests, [plea
 ## Author
 
 **Jon Schlinkert**
- 
+
 + [github/jonschlinkert](https://github.com/jonschlinkert)
 + [twitter/jonschlinkert](http://twitter.com/jonschlinkert) 
 
 ## License
-Copyright (c) 2015 Jon Schlinkert  
+Copyright (c) 2014-2015 Jon Schlinkert  
 Released under the MIT license
 
 ***
