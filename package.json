@@ -16,24 +16,26 @@
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/jonschlinkert/array-pull/blob/master/LICENSE-MIT"
+    "url": "https://github.com/jonschlinkert/array-pull/blob/master/LICENSE"
   },
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha"
   },
   "dependencies": {
-    "array-slice": "^0.2.2"
+    "array-slice": "^0.2.3"
   },
   "devDependencies": {
-    "benchmarked": "^0.1.3",
-    "chalk": "^0.5.1",
-    "glob": "^4.3.1",
-    "mocha": "*",
-    "should": "*"
+    "benchmarked": "^0.1.4",
+    "chalk": "^1.0.0",
+    "glob": "^5.0.5",
+    "should": "^6.0.1"
   },
   "keywords": [
     "array",
