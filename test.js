@@ -12,14 +12,20 @@ var should = require('should');
 var pull = require('./');
 
 describe('pull', function() {
-  it('should return unique elements in the given array:', function() {
+  it('should return the array unchanged when only one argument is passed:', function() {
     pull(['a', 'a', 'c']).should.eql(['a', 'a', 'c']);
   });
 
-  it('should return only the unique elements from all provided arrays:', function() {
-    pull(['a', 'b', 'c'], 'c').should.eql(['a', 'b']);
+  it('should remove a list of items from all provided arrays:', function() {
+    pull(['a', 'b', 'c', 'c'], 'c').should.eql(['a', 'b']);
     pull(['a', 'b', 'c'], 'b', 'c').should.eql(['a']);
     pull(['a', 'b', 'c'], 'a', 'b', 'c').should.eql([]);
+  });
+
+  it('should remove an array of items from the array', function() {
+    pull(['a', 'b', 'c', 'c'], ['c']).should.eql(['a', 'b']);
+    pull(['a', 'b', 'c'], ['b', 'c']).should.eql(['a']);
+    pull(['a', 'b', 'c'], ['a', 'b', 'c']).should.eql([]);
   });
 
   it('should remove elements from the array in place:', function() {
