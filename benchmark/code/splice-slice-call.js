@@ -1,7 +1,5 @@
 'use strict';
 
-var flatten = require('arr-flatten');
-
 module.exports = function arrayPull(val, ele) {
   var arr = val.slice();
   var remove = [].slice.call(arguments, 1);
@@ -9,7 +7,9 @@ module.exports = function arrayPull(val, ele) {
   var idx = -1;
 
   while (++idx < len) {
-    for (var i = 0; i < arr.length; i++) {
+    var alen = arr.length;
+
+    for (var i = 0; i < alen; i++) {
       if (arr[i] === remove[idx]) {
         arr.splice(i, 1);
       }
