@@ -1,7 +1,7 @@
 {
   "name": "array-pull",
   "description": "Remove the specified elements from the given array using strict equality for comparison.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/array-pull",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/array-pull",
