@@ -3,21 +3,12 @@
   "description": "Remove the specified elements from the given array using strict equality for comparison.",
   "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/array-pull",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/array-pull.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "repository": "jonschlinkert/array-pull",
   "bugs": {
     "url": "https://github.com/jonschlinkert/array-pull/issues"
   },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jonschlinkert/array-pull/blob/master/LICENSE"
-  },
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -29,12 +20,14 @@
     "test": "mocha"
   },
   "dependencies": {
+    "arr-flatten": "^1.0.1",
     "array-slice": "^0.2.3"
   },
   "devDependencies": {
+    "ansi-bold": "^0.1.1",
     "benchmarked": "^0.1.4",
-    "chalk": "^1.0.0",
     "glob": "^5.0.5",
+    "gulp-format-md": "^0.1.7",
     "mocha": "^2.2.4",
     "should": "^6.0.1"
   },
@@ -46,5 +39,31 @@
     "list",
     "pull",
     "remove"
-  ]
+  ],
+  "verb": {
+    "related": {
+      "list": [
+        "array-each",
+        "array-every",
+        "array-intersection",
+        "array-map",
+        "array-unique"
+      ]
+    },
+    "run": true,
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "reflinks": [
+      "verb"
+    ]
+  }
 }
